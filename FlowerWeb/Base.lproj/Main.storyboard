@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="l44-Nh-oNo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Flower Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnJ-15-QuV">
@@ -53,7 +53,7 @@
                                 </connections>
                             </switch>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QC7-w9-ygk">
-                                <rect key="frame" x="20" y="123" width="280" height="425"/>
+                                <rect key="frame" x="20" y="123" width="280" height="337"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -61,12 +61,12 @@
                                 </constraints>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xlf-gv-GU4">
-                                <rect key="frame" x="142" y="320" width="37" height="37"/>
+                                <rect key="frame" x="142" y="232" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                             <webView alpha="0.64999999999999969" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89R-GO-vsi">
-                                <rect key="frame" x="20" y="478" width="280" height="70"/>
+                                <rect key="frame" x="20" y="390" width="280" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -81,7 +81,6 @@
                         <constraints>
                             <constraint firstItem="QC7-w9-ygk" firstAttribute="top" secondItem="bg2-jn-mBJ" secondAttribute="bottom" constant="8" symbolic="YES" id="0fp-Hl-CqJ"/>
                             <constraint firstAttribute="trailing" secondItem="cnJ-15-QuV" secondAttribute="trailing" constant="61" id="2Kj-FZ-VdA"/>
-                            <constraint firstItem="26P-Un-427" firstAttribute="top" secondItem="cnJ-15-QuV" secondAttribute="bottom" constant="8" symbolic="YES" id="6ru-P4-7Zd"/>
                             <constraint firstItem="89R-GO-vsi" firstAttribute="trailing" secondItem="26P-Un-427" secondAttribute="trailing" id="9f7-EW-ewQ"/>
                             <constraint firstItem="89R-GO-vsi" firstAttribute="trailing" secondItem="QC7-w9-ygk" secondAttribute="trailing" id="Fdf-5u-eer"/>
                             <constraint firstItem="89R-GO-vsi" firstAttribute="leading" secondItem="QC7-w9-ygk" secondAttribute="leading" id="K14-EU-DOr"/>
@@ -91,6 +90,7 @@
                             <constraint firstItem="bg2-jn-mBJ" firstAttribute="centerY" secondItem="qGy-bN-BjA" secondAttribute="centerY" id="Xdg-Gd-Hwd"/>
                             <constraint firstItem="89R-GO-vsi" firstAttribute="bottom" secondItem="QC7-w9-ygk" secondAttribute="bottom" id="adv-eC-XZ3"/>
                             <constraint firstItem="l44-Nh-oNo" firstAttribute="top" secondItem="89R-GO-vsi" secondAttribute="bottom" constant="20" id="ajt-Ev-4YT"/>
+                            <constraint firstItem="26P-Un-427" firstAttribute="top" secondItem="cnJ-15-QuV" secondAttribute="bottom" constant="8" symbolic="YES" id="aqz-x4-ElE"/>
                             <constraint firstItem="89R-GO-vsi" firstAttribute="leading" secondItem="26P-Un-427" secondAttribute="leading" id="bFA-fW-gQn"/>
                             <constraint firstItem="l44-Nh-oNo" firstAttribute="top" secondItem="QC7-w9-ygk" secondAttribute="bottom" constant="20" id="dfh-pC-i7N"/>
                             <constraint firstItem="xlf-gv-GU4" firstAttribute="centerX" secondItem="89R-GO-vsi" secondAttribute="centerX" id="iVX-J8-U3F"/>
@@ -116,6 +116,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
