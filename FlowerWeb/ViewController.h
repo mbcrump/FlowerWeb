@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISegmentedControl *colorChoice;
+@property (strong, nonatomic) IBOutlet UIImageView *flowerImageView;
+@property (weak, nonatomic) IBOutlet UIWebView *flowerDetailView;
 
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
+
+- (IBAction)getFlower:(id)sender;
+- (IBAction)toggleFlowerDetail:(id)sender;
 @end
